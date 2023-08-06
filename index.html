@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <title>Integrador</title>
+</head>
+<body>
+  <header class="one">
+    <h1>Integrador</h1>
+</header>
+<br>
+      <div class="boton">
+      <button class="mybtn" id="myBtn">Metodologia Agile</button>
+</div>
+    <div class="definicion"> 
+      <span>El <em>Agile Testing</em> es una práctica de pruebas de software que sigue los principios de desarrollo ágil. Esta estrategia se basa en involucrar a todos los miembros de un equipo ágil multifuncional, en el que el rol del “tester” será que el equipo entregue los valores del negocio deseados por el cliente, trabajando a un ritmo sostenible y continuo.</span>
+  </div>
+<!-- Imagen en modal -->
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div >
+      <img class="imagen" src="/imagenes/Scrum-Process_Articulo_Semana-32_2022_1-scaled.jpg" />
+    </div>
+  </div>
+</div>
+<!--JS modal-->
+<script>
+var modala = document.getElementById("myModal");
+var btna = document.getElementById("myBtn");
+var spana = document.getElementsByClassName("close")[0];
+btna.onclick = function() {
+  modala.style.display = "block";
+}
+spana.onclick = function() {
+  modala.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modala) {
+    modala.style.display = "none";
+  }
+}
+</script>
+
+<!--columnas-->
+
+<table id="roles">
+    <tr>
+        <th>Product Owner</th>
+        <th>Business Analist</th>
+        <th>Scrum Master</th>
+        <th>Equipo técnico</th>
+    </tr>
+<tr>
+    <td>Es el representante del cliente y responsable de la gestión del product backlog, es decir, es el responsable de la gestión de la cartera de los productos. Recogerá los requisitos del proyecto, decidirá que se desarrolla y que no, priorizará el Product Backlog y hará que esté visible para todo el mundo, tanto para el cliente como para el Equipo Scrum y acordará con el equipo la definición de hecho.</td>
+    <td>Un Business Analyst se encarga de recopilar e interpretar datos procedentes de diversas fuentes y los utiliza para mejorar los sistemas y procesos de la empresa. Esto puede implicar todo tipo de acciones, desde el perfeccionamiento de las prácticas comerciales hasta la revisión integral de las operaciones existentes.</td>
+    <td>Un Scrum Master es el líder del equipo de Scrum. Está a cargo de establecer la metodología Scrum y mantener a los miembros del equipo enfocados en los principios y las prácticas de Scrum, a la vez que colaborará con el Product Owner para priorizar el Product Backlog.</td>
+    <td>El Equipo de Desarrollo o Development Team está compuesto por entre 3 y 9 profesionales, con capacidad de autogestión y multidisciplinares y su tarea es conseguir un incremento en el desarrollo del producto a partir de los elementos del Product Backlog seleccionados durante el Sprint Planning.</td>
+</tr>
+</table>
+
+<!--box definicion QA-->
+
+<div class="definicion">
+    <span> Los testers de software o quality engineers pueden definir un plan y una estrategia de calidad, revisar el código, ejecutar pruebas funcionales, de performance, de seguridad, manuales y automatizadas, entre otras cosas, a lo largo del ciclo de desarrollo. 
+    En un contexto ágil, el rol del tester va más allá de detectar los bugs, hacerles seguimiento y documentar todo el proceso. el papel del tester ágil es entregar el valor de negocio deseado por el cliente a un ritmo sostenible y continuo.
+    </span>
+</div>
+
+<h1 class="titleBox">Ceremonias</h1>
+
+<!--Flip box-->
+
+<div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+      <h2 class="titles">Sprint planning</h2>
+      </div>
+      <div class="flip-box-back">
+        <p class="contentBox">Es el comienzo del sprint. Es una reunión en la que participa todo el Equipo Scrum y es donde se define el objetivo del sprint, el sprint goal. Se planificará qué ítems del Product Backlog pasarán a ser ejecutados, es decir, es aquí cuando se define el Sprint Backlog.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2 class="titles">Daily Meeting</h2>
+      </div>
+      <div class="flip-box-back">
+        <p class="contentBox">Es una reunión diaria de unos 15 minutos de duración del equipo de trabajo scrum. El objetivo de esta reunión diaria es sincronizar las tareas del equipo de trabajo hacia la meta del sprint y adaptar el sprint backlog según sea necesario.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2 class="titles">Planificacion <br> táctica</h2>
+      </div>
+      <div class="flip-box-back">
+        <p class="contentBox">Proceso en el que el equipo de desarrollo y el Scrum Master ajustan el plan detallado para alcanzar el objetivo del Sprint durante el desarrollo. Esto incluye asignar tareas específicas a los miembros del equipo y realizar ajustes en el enfoque para lograr el objetivo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2 class="titles">Refinamiento</h2>
+      </div>
+      <div class="flip-box-back">
+        <p class="contentBox">Es una reorganización del Product Backlog, es decir, una actualización del mismo. Se hace de manera colaborativa entre el equipo de desarrollo y el Product Owner correspondiente. </p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2 class="titles">Sprint Review</h2>
+      </div>
+      <div class="flip-box-back">
+        <p class="contentBox">Es una reunión en la que se repasa todo el trabajo realizado por el Equipo de Desarrollo y sirve para inspeccionar el incremento del producto. Puede causar cambios en el Product Backlog, añadiendo nuevos ítems, modificando los existentes, o incluso, eliminando aquellos que ahora se vean innecesarios.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2 class="titles">Retrospectiva</h2>
+      </div>
+      <div class="flip-box-back">
+        <p class="contentBox">Consiste en otra reunión que tiene como objetivo mejorar la manera en la que el Equipo Scrum ha trabajado durante el sprint. Se manifiesta qué funciona, qué no funciona y se presentan soluciones, así como se mejoran las relaciones interpersonales, procesos y las herramientas utilizadas.</p>
+      </div>
+    </div>
+  </div>
+
+<!--sprint backlog product backlog-->
+
+<div>
+  <img class="imagen1" src="imagenes/Sprint-Backlog.png" alt="sprint backlog" height="300" width="300">
+  <img class="imagen2" src="imagenes/Donetonic-Product-Backlog-768x693.png" alt="product backlog" height="300" width="400">
+</div>
+  <!-- PRIMER BOTON: Sprint backlog -->
+  <button id="myBtn1" class="mybtn1">Sprint-Backlog</button>
+
+  <div id="myModal1" class="modal1">
+    <div class="modal-content1">
+      <div class="modal-header1">
+        <span class="close1">&times;</span>
+        <h2>Sprint-Backlog</h2>
+      </div>
+      <div class="modal-body1">
+<p>El <em>Sprint Backlog</em> o lista de pendientes del sprint, es el conjunto de tareas seleccionadas del product backlog durante el sprint planning para el Sprint actual, es decir, las tareas necesarias para realizar un incremento de producto. (El <em>Incremento</em> es la suma de todos los elementos del producto backlog completados durante un Sprint más el de todos los Sprints anteriores.) El sprint backlog es una imagen «en tiempo real» del trabajo que se planea realizar durante el Sprint, es un plan que hace visible todo el trabajo que el equipo de desarrollo identifica como necesario para cumplir con el objetivo del Sprint. Además, tiene el suficiente detalle para que los progresos puedan ser entendidos en el daily scrum.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal boton 1 Javascript -->
+
+  <script>
+  var modal1 = document.getElementById("myModal1");
+  var btn1 = document.getElementById("myBtn1");
+  var span1 = document.getElementsByClassName("close1")[0];
+  btn1.onclick = function() {
+    modal1.style.display = "block";
+  }
+  span1.onclick = function() {
+    modal1.style.display = "none";
+  }
+  window.onclick = function(event) {
+    if (event.target == modal1) {
+      modal1.style.display = "none";
+    }
+  }
+  </script>
+<!--SEGUNDO BOTON-->
+
+ <button id="myBtn2" class="mybtn2">Product Backlog</button>
+ <div id="myModal2" class="modal2">
+   <div class="modal-content2">
+     <div class="modal-header2">
+       <span class="close2">&times;</span>
+       <h2>Product Backlog</h2>
+     </div>
+     <div class="modal-body2">
+<p>El <em>product backlog</em> es un listado de todas las tareas que se pretenden hacer durante el desarrollo de un proyecto. Es una lista de características que han sido priorizadas, y contiene descripciones breves sobre todo lo que se desea para el producto que se va a desarrollar. Cuando aplicamos Scrum, no es necesario definir todos los requisitos al inicio de un proyecto. Típicamente, el <em>product owner</em> en conjunto con el <em>equipo técnico</em> empiezan escribiendo todo lo que consideran importante en el product backlog.
+  Este product backlog es casi siempre suficiente para iniciar con el primer sprint. Y tiene permitido crecer y cambiar tanto como sea necesario, en función a lo que se va aprendiendo sobre el producto y los clientes.</p>
+     </div>
+   </div>
+ </div>
+ <!--Modal boton 2 Javascript-->
+  <script>
+    var modal = document.getElementById("myModal2");
+    var btn = document.getElementById("myBtn2");
+    var span = document.getElementsByClassName("close2")[0];
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
